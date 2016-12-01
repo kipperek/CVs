@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>CV Wiktorka</title>
+    <style>
+    body{
+      padding: 0;
+      margin:0;
+      /*background:grey;*/
+      font-family: Open sans;
+    }
+    .a4{
+      background: white;
+      width: 210mm;
+      height: 297mm;
+      margin:0 auto;
+      position:relative;
+      padding:5mm;
+    }
+    .header{
+      display: flex;
+      align-items: center;
+    }
+
+    .header>div:nth-child(2){
+        flex: 1 1 auto;
+    }
+    .header>div{
+      flex: 0 1 auto;
+    }
+
+    .fotka{
+      width:40mm;
+    }
+
+    .info{
+      text-align: right;
+    }
+
+    .info span{
+      white-space: nowrap;
+    }
+    .more-info{
+      font-size:12px;
+      padding-left:60px;
+      text-align: left;
+    }
+    .more-info span{
+      vertical-align: middle;
+    }
+
+    .i-middle{
+      top:5px !important;
+      margin-left:10px;
+    }
+
+    .more-info i{
+      font-size: 20px;
+      top: 3px;
+      position: relative;
+    }
+
+    .name{
+      font-size:50px;
+      font-weight: 300;
+      margin-right:20px;
+    }
+
+    .box{
+      background: #286ea9;
+      width:50mm;
+    }
+
+    .klauzula{
+      font-size: 14.65px;
+      position: absolute;
+      bottom:5mm;
+      width: calc(100% - 10mm);
+      left:5mm;
+      text-align: justify;
+      justify-content: space-between;
+    }
+
+    .section{
+      display: flex;
+    }
+    .section>div:first-child{
+      text-align: right;
+      color:white;
+      font-size: 20px;
+      line-height: 1em;
+      padding-right:5px;
+      width:50mm;
+      box-sizing: border-box;
+      flex-shrink: 0;
+    }
+    .section>div{
+      padding: 30px 0;
+    }
+    .section>div:last-child{
+      flex: 1 1 auto;
+    }
+
+    .timeline{
+      padding: 0 10px;
+      display: flex;
+      align-items: flex-start;
+      margin-bottom:10px;
+    }
+
+    .time{
+      line-height: 20px;
+      font-weight: 600;
+      flex-shrink: 0;
+      width:145px;
+    }
+
+    .timeline-content{
+      line-height: 20px;
+      text-align: justify;
+    }
+    .first>div{
+      padding-top:100px;
+    }
+
+    ul{
+      margin: 0;
+      padding-left: 28px;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="a4">
+      <div class="header">
+        <div>
+          <div class="box" style="height: 40mm;">
+          </div>
+        </div>
+        <div class="info">
+          <div class="name">Wiktoria<span style="font-weight:600;">Kołecka</span></div>
+          <div class="more-info">
+            <span><i class="material-icons">cake</i> 28-09-1995</span>
+            <span><i class="material-icons i-middle">phone</i> 782-392-906</span>
+            <span><i class="material-icons i-middle">mail</i> wiktoriakolecka95@wp.pl</span>
+            <span><i class="material-icons">location_on</i> Gdańsk, Gospody 13D/20</span>
+           </div>
+        </div>
+        <div style="height:40mm;"><img src="wiktorka.png" alt class="fotka" /></div>
+      </div>
+
+      <div class="section first">
+        <div class="box">Wykszałcenie</div>
+        <div>
+          <div class="timeline">
+            <div class="time">
+              10/2014 - Obecnie
+            </div>
+            <div class="timeline-content">Uniwersytet Gdański, kierunek finanse i rachunkowość, studia licencjackie</div>
+          </div>
+
+          <div class="timeline">
+            <div class="time">
+              09/2011 - 05/2014
+            </div>
+            <div class="timeline-content">Liceum Ogólnokształcące im. Jana Bażyńskiego nr 1<br/>w Ostródzie, klasa o profilu matematyczno - geograficznym</div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="section">
+        <div class="box">Doświadczenie</div>
+        <div>
+          <div class="timeline">
+            <div class="time">
+              06/2015 - 08/2016
+            </div>
+            <div class="timeline-content">Restauracja "Chata Smakosza" - praca na stanowisku kelnerki i barmanki </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="box">Informacje</div>
+        <div>
+          <ul>
+            <li>Angielski na poziomie B2</li>
+            <li>Prawo jazdy kategoria B</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="box">O mnie</div>
+        <div class="timeline" style="text-indent: 20px; padding-left: 10px; text-align:justify;">
+          Jestem studentką trzeciego roku. Swojej wiedzy nie chce ograniczać wyłącznie do książkowej, ale pragnę zdobyć umiejętności praktyczne. Chcę zacząć rozwijać się jak najszybciej i nie czekać aż skończę studia.
+          Szybko przyswajam nową więdzę i jestem ciekawa świata. Ponadto nie mam większych problemów z godzeniem nauki i pracy jednocześnie.
+        </div>
+      </div>
+
+
+      <div class="klauzula">
+        Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; (tekst jednolity: Dz. U. 2016 r. poz. 922).
+      </div>
+    </div>
+  </body>
+</html>
